@@ -45,6 +45,8 @@ function skapaTabell(tabellId, writer) {
     skapaRad(tabell, startNummer + 7);
     skapaRad(tabell, startNummer + 8);
     skapaRad(tabell, startNummer + 9);
+    
+    
 }
 
 function skapaRad(tabell, radnummer) {
@@ -120,8 +122,6 @@ function skapaRad(tabell, nummer) {
 // Skapa alla tre tabeller
 skapaTabell('tabell1', 'Henning Mankell');
 
-// Sortera 
-sorteraKolumn3('tabell1');
 
 skapaTabell('tabell2', 101);
 skapaTabell('tabell3', 201);
