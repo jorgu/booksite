@@ -1,28 +1,72 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 20px;
-    background-color: #f0f8ff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 40px;
+    background: linear-gradient(to right, #e0eafc, #cfdef3);
+    color: #333;
 }
 
 h1 {
     text-align: center;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.button-container {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+button {
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background: linear-gradient(90deg, #4facfe 0%, #00f2fe 100%);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 10px rgba(0,0,0,0.3);
 }
 
 table {
-    width: 60%;
-    margin: 0 auto;
+    width: 70%;
+    margin: 20px auto;
     border-collapse: collapse;
-}
-
-table, th, td {
-    border: 1px solid #000;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    display: none; /* Alla tabeller är dolda från början */
 }
 
 th, td {
-    padding: 10px;
+    padding: 15px 20px;
     text-align: center;
+    border-bottom: 1px solid #ddd;
 }
 
-tr:nth-child(even) {
-    background-color: #e0f7fa;
+th {
+    background-color: #3498db;
+    color: white;
+    font-size: 18px;
 }
+
+tr:nth-child(even) td {
+    background-color: #f2f9ff;
+}
+
+tr:hover td {
+    background-color: #d6eaf8;
+}
+
+/* Klass för dolda element */
+.dold {
+    display: none;
+}
+
