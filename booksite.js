@@ -1,3 +1,9 @@
+'use strict'
+/* 
+
+https://jorgu.github.io/booksite/;
+
+*/
 
 
 // Funktion för att visa en viss tabell och dölja de andra
