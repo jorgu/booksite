@@ -4,7 +4,11 @@
 https://jorgu.github.io/booksite/;
 
 */
+let books = []
 
+init();
+
+let tempArray = books.filter(function (item) {return item.author=='Liza Marklund'})
 
 // Funktion för att visa en viss tabell och dölja de andra
 function visaTabell(tabellId) {
@@ -132,3 +136,64 @@ skapaTabell('tabell1', 'Henning Mankell');
 skapaTabell('tabell2', 101);
 skapaTabell('tabell3', 201);
 
+function init() {
+    books.push({author: 'Liza Marklund', serie: 'Annika Bengtzon', book: 'Sprängaren', year: 1998, bought: 'X'});
+    books.push({author: 'Liza Marklund', serie: 'Annika Bengtzon', book: 'Studio sex', year: 1999, bought: ''});
+    books.push({author: 'Liza Marklund', serie: 'Annika Bengtzon', book: 'Paradiset', year: 2000, bought: 'X'});
+    books.push({author: 'Liza Marklund', serie: 'Annika Bengtzon', book: 'Prime time', year: 2002, bought: 'X'});
+    books.push({author: 'Liza Marklund', serie: 'Annika Bengtzon', book: 'Den röda vargen', year: 2003, bought: 'X'});
+    books.push({author: 'Liza Marklund', serie: 'Annika Bengtzon', book: 'Nobels testamente', year: 2006, bought: 'X'});
+    books.push({author: 'Liza Marklund', serie: 'Annika Bengtzon', book: 'Livstid', year: 2007, bought: 'X'});
+    books.push({author: 'Liza Marklund', serie: 'Annika Bengtzon', book: 'En plats i solen', year: 2008, bought: ''});
+    books.push({author: 'Liza Marklund', serie: 'Annika Bengtzon', book: 'Du gamla, du fria', year: 2011, bought: ''});
+    books.push({author: 'Liza Marklund', serie: 'Annika Bengtzon', book: 'Lyckliga gatan', year: 2013, bought: ''});
+    books.push({author: 'Liza Marklund', serie: 'Annika Bengtzon', book: 'Järnblod', year: 2015, bought: ''});
+    books.push({author: 'Liza Marklund', serie: 'Stenträsk-triologin', book: 'Polcirkeln', year: 2021, bought: ''});
+    books.push({author: 'Liza Marklund', serie: 'Stenträsk-triologin', book: 'Kallmyren', year: 2022, bought: ''});
+    books.push({author: 'Liza Marklund', serie: 'Stenträsk-triologin', book: 'Stormberget', year: 2023, bought: ''});
+    books.push({author: ' Mari Jungstedt', serie: 'Anders Knutas', book: 'Den du inte ser', year: 2003, bought: ''});
+    books.push({author: ' Mari Jungstedt', serie: 'Anders Knutas', book: 'I denna stilla natt', year: 2004, bought: 'X'});
+    books.push({author: ' Mari Jungstedt', serie: 'Anders Knutas', book: 'Den inre kretsen', year: 2005, bought: 'X'});
+    books.push({author: ' Mari Jungstedt', serie: 'Anders Knutas', book: 'Den döende dandyn', year: 2006, bought: ''});
+    books.push({author: ' Mari Jungstedt', serie: 'Anders Knutas', book: 'I denna ljuva sommartid', year: 2007, bought: ''});
+    books.push({author: ' Mari Jungstedt', serie: 'Anders Knutas', book: 'Den mörka ängeln', year: 2008, bought: 'X'});
+    books.push({author: ' Mari Jungstedt', serie: 'Anders Knutas', book: 'Den dubbla tystnaden', year: 2009, bought: 'X'});
+    books.push({author: ' Mari Jungstedt', serie: 'Anders Knutas', book: 'Den farliga leken', year: 2010, bought: ''});
+    books.push({author: ' Mari Jungstedt', serie: 'Anders Knutas', book: 'Det fjärde offret', year: 2011, bought: 'X'});
+    books.push({author: ' Mari Jungstedt', serie: 'Anders Knutas', book: 'Den sista akten', year: 2012, bought: ''});
+    books.push({author: ' Mari Jungstedt', serie: 'Anders Knutas', book: 'Du går inte ensam', year: 2013, bought: ''});
+    books.push({author: ' Mari Jungstedt', serie: 'Anders Knutas', book: 'Den man älskar', year: 2014, bought: ''});
+    books.push({author: ' Mari Jungstedt', serie: 'Anders Knutas', book: 'Det andra ansiktet', year: 2016, bought: ''});
+    books.push({author: ' Mari Jungstedt', serie: 'Anders Knutas', book: 'Ett mörker mitt ibland oss', year: 2018, bought: ''});
+    books.push({author: ' Mari Jungstedt', serie: 'Anders Knutas', book: 'Jag ser dig', year: 2019, bought: ''});
+    books.push({author: ' Mari Jungstedt', serie: 'Anders Knutas', book: 'Där den sista lampan lyser', year: 2021, bought: ''});
+    books.push({author: ' Mari Jungstedt', serie: 'Anders Knutas', book: 'Det slutna rummet', year: 2023, bought: ''});
+    books.push({author: ' Mari Jungstedt', serie: 'Anders Knutas', book: 'Den sista utposten', year: 2024, bought: ''});
+    books.push({author: 'Åsa Larsson', serie: 'Rebecka Martinsson', book: 'Solstorm', year: 2003, bought: 'X'});
+    books.push({author: 'Åsa Larsson', serie: 'Rebecka Martinsson', book: 'Det blod som spillts', year: 2004, bought: 'X'});
+    books.push({author: 'Åsa Larsson', serie: 'Rebecka Martinsson', book: 'Svart stig', year: 2006, bought: ''});
+    books.push({author: 'Åsa Larsson', serie: 'Rebecka Martinsson', book: 'Till dess din vrede upphör', year: 2008, bought: ''});
+    books.push({author: 'Åsa Larsson', serie: 'Rebecka Martinsson', book: 'Till offer åt Molok', year: 2012, bought: ''});
+    books.push({author: 'Åsa Larsson', serie: 'Rebecka Martinsson', book: 'Fädernas missgärningar', year: 2021, bought: ''});
+    books.push({author: 'Henning Mankell', serie: 'Kurt Wallander', book: 'Mördare utan ansikte', year: 1991, bought: 'X'});
+    books.push({author: 'Henning Mankell', serie: 'Kurt Wallander', book: 'Hundarna i Riga', year: 1992, bought: 'X'});
+    books.push({author: 'Henning Mankell', serie: 'Kurt Wallander', book: 'Den vita lejoninnan', year: 1993, bought: 'X'});
+    books.push({author: 'Henning Mankell', serie: 'Kurt Wallander', book: 'Mannen som log', year: 1994, bought: ''});
+    books.push({author: 'Henning Mankell', serie: 'Kurt Wallander', book: 'Villospår', year: 1995, bought: 'X'});
+    books.push({author: 'Henning Mankell', serie: 'Kurt Wallander', book: 'Den femte kvinnan', year: 1996, bought: 'X'});
+    books.push({author: 'Henning Mankell', serie: 'Kurt Wallander', book: 'Steget efter', year: 1997, bought: 'X'});
+    books.push({author: 'Henning Mankell', serie: 'Kurt Wallander', book: 'Brandvägg', year: 1998, bought: 'X'});
+    books.push({author: 'Henning Mankell', serie: 'Kurt Wallander', book: 'Pyramiden', year: 1999, bought: ''});
+    books.push({author: 'Henning Mankell', serie: 'Kurt Wallander', book: 'Innan frosten', year: 2002, bought: ''});
+    books.push({author: 'Henning Mankell', serie: 'Kurt Wallander', book: 'Den orolige mannen', year: 2009, bought: ''});
+    books.push({author: 'Henning Mankell', serie: 'Kurt Wallander', book: 'Handen', year: 2013, bought: ''});
+    books.push({author: 'Hjorth Rosenfeldt', serie: 'Sebastian Bergman', book: 'Det fördolda', year: 2010, bought: ''});
+    books.push({author: 'Hjorth Rosenfeldt', serie: 'Sebastian Bergman', book: 'Lärjungen', year: 2011, bought: ''});
+    books.push({author: 'Hjorth Rosenfeldt', serie: 'Sebastian Bergman', book: 'Fjällgraven', year: 2012, bought: ''});
+    books.push({author: 'Hjorth Rosenfeldt', serie: 'Sebastian Bergman', book: 'Den stumma flickan', year: 2014, bought: ''});
+    books.push({author: 'Hjorth Rosenfeldt', serie: 'Sebastian Bergman', book: 'De underkända', year: 2015, bought: ''});
+    books.push({author: 'Hjorth Rosenfeldt', serie: 'Sebastian Bergman', book: 'En högre rättvisa', year: 2018, bought: ''});
+    books.push({author: 'Hjorth Rosenfeldt', serie: 'Sebastian Bergman', book: 'Som man sår', year: 2021, bought: ''});
+    books.push({author: 'Hjorth Rosenfeldt', serie: 'Sebastian Bergman', book: 'Skulden man bär', year: 2023, bought: ''});
+
+}
