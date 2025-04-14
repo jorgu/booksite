@@ -4,7 +4,8 @@
 https://jorgu.github.io/booksite/;
 
 */
-var books = [];
+let isAdmin = window.location.href.toLowerCase().indexOf('theking') > 0 ? true : false; 
+var books   = [];
 
 init();
 
@@ -51,7 +52,7 @@ function skapaTabell(tabellId, writer) {
     headerRow.appendChild(header1);
 
     const header2 = document.createElement('th');
-    header2.textContent = 'Serie';
+    header2.textContent = 'Bok';
     headerRow.appendChild(header2);
 
     const header3 = document.createElement('th');
@@ -63,7 +64,7 @@ function skapaTabell(tabellId, writer) {
     // Get author's books
     let bookList = getBooks(writer);
     bookList.forEach( book => {
-        skapaRad(tabell, book.book)    
+        skapaRad(tabell, book)    
     } )
     
 }
@@ -110,15 +111,13 @@ function sorteraKolumn3(tabellId) {
     sortedRows.forEach(row => tabell.appendChild(row));
 }
 
-function skapaCell(text, grey = false, strikethrough = false) {
+function skapaCell(text, isAdmin = false) {
     const cell = document.createElement('td');
     cell.textContent = text;
 
-    if (grey) {
-        cell.style.color = 'gray'; // Gör texten grå
+    if (isAdmin) {
+        cell.style.color = 'lightgray'; // Gör texten grå
         cell.style.fontStyle = 'italic'
-    }
-    if (strikethrough) {
         cell.style.textDecoration = 'line-through'; // Gör texten överstruken
         cell.style.fontStyle = 'italic'
     }
@@ -126,16 +125,23 @@ function skapaCell(text, grey = false, strikethrough = false) {
     return cell;
 }
 
-function skapaRad(tabell, nummer) {
+function skapaRad(tabell, book) {
     const rad = document.createElement('tr');
+    let isBought = false;
+    if (isAdmin) {
+        book.bought.toLowerCase() == "x" ? isBought = true : isBought = false;
+    }
 
     // Exempel: Kolumn 1 vanlig, Kolumn 2 grå, Kolumn 3 grå + överstruken
-    rad.appendChild(skapaCell('Data ' + nummer));
-    rad.appendChild(skapaCell('Info ' + nummer, true)); // grå
-    rad.appendChild(skapaCell(nummer, true, true)); // grå + överstruken
+    rad.appendChild(skapaCell(book.serie));
+    rad.appendChild(skapaCell(book.book, isBought)); // grå
+    rad.appendChild(skapaCell(book.year, isBought)); // grå + överstruken
 
     tabell.appendChild(rad);
 }
+
+
+
 
 
 
