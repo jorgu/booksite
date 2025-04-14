@@ -26,11 +26,25 @@ writer  = 'Liza Marklund';
 skapaTabell(tableID, writer);
 document.getElementById('btn3').innerHTML = writer;
 
+tableID = 'tabell4';
+writer  = 'Mari Jungstedt';
+skapaTabell(tableID, writer);
+document.getElementById('btn4').innerHTML = writer;
+
+tableID = 'tabell5';
+writer  = 'Åsa Larsson';
+skapaTabell(tableID, writer);
+document.getElementById('btn5').innerHTML = writer;
+
+tableID = 'tabell6';
+writer  = 'Hjorth Rosenfeldt';
+skapaTabell(tableID, writer);
+document.getElementById('btn6').innerHTML = writer;
 
 
 // Funktion för att visa en viss tabell och dölja de andra
 function visaTabell(tabellId) {
-    const tabeller = ['tabell1', 'tabell2', 'tabell3'];
+    const tabeller = ['tabell1', 'tabell2', 'tabell3', 'tabell4', 'tabell5', 'tabell6'];
 
     tabeller.forEach(id => {
         const tabell = document.getElementById(id);
