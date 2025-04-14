@@ -47,7 +47,7 @@ table {
 
 th, td {
     padding: 15px 20px;
-    text-align: center;
+    text-align: left;
     border-bottom: 1px solid #ddd;
 }
 
@@ -69,4 +69,5 @@ tr:hover td {
 .dold {
     display: none;
 }
+
 

@@ -78,6 +78,7 @@ function skapaRad(tabell, radnummer) {
 
     const td2 = document.createElement('td');
     td2.textContent = `Rad ${radnummer}, Kolumn 2`;
+    td2.setAttribute('class') = 'left'
     tr.appendChild(td2);
 
     const td3 = document.createElement('td');
