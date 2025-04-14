@@ -2,7 +2,6 @@
 
 include('bookList.js');
 include('booksite.js');
-include('mankell.js');
 
 function include(file) { 
 

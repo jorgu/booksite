@@ -62,7 +62,7 @@ function skapaTabell(tabellId, writer) {
     tabell.appendChild(headerRow);
 
     // Get author's books
-    let bookList = getBooks(writer);
+    let bookList = books.filter(function (item) {return item.author==writer}) ;
     bookList.forEach( book => {
         skapaRad(tabell, book)    
     } )
