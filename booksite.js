@@ -82,8 +82,8 @@ function skapaTabell(tabellId, writer) {
     } )
     
 }
-// vad fyller denna för funktion?
-function skapaRad(tabell, radnummer) {
+/* vad fyller denna för funktion?
+function skapaaRad(tabell, radnummer) {
     const tr = document.createElement('tr');
 
     const td1 = document.createElement('td');
@@ -101,7 +101,7 @@ function skapaRad(tabell, radnummer) {
 
     tabell.appendChild(tr);
 }
-
+*/
 function sorteraKolumn3(tabellId) {
     const tabell = document.getElementById(tabellId);
     const rows = Array.from(tabell.rows).slice(1); // Hoppa över headern
