@@ -6,10 +6,17 @@ https://jorgu.github.io/booksite/;
 */
 let isAdmin = window.location.href.toLowerCase().indexOf('theking') > 0 ? true : false; 
 var books   = [];
+let allTables = []
 
 init();
+let writers = getAllAuthors(books);
+let id = 0;
+writers.forEach(writer => {
+    skapaTabell(++id, writer);
+    allTables.push('tabell' + id);
+});
 
-// Skapa alla tre tabeller
+/*/' Skapa alla tre tabeller
 let tableID = 'tabell1';
 let writer  = 'Henning Mankell';
 
@@ -40,13 +47,13 @@ tableID = 'tabell6';
 writer  = 'Hjorth Rosenfeldt';
 skapaTabell(tableID, writer);
 document.getElementById('btn6').innerHTML = writer;
-
+*/
 
 // Funktion för att visa en viss tabell och dölja de andra
 function visaTabell(tabellId) {
-    const tabeller = ['tabell1', 'tabell2', 'tabell3', 'tabell4', 'tabell5', 'tabell6'];
+    //const tabeller = ['tabell1', 'tabell2', 'tabell3', 'tabell4', 'tabell5', 'tabell6'];
 
-    tabeller.forEach(id => {
+    allTables.forEach(id => {
         const tabell = document.getElementById(id);
         if (id === tabellId) {
             tabell.style.display = 'table';  // Visa vald tabell
@@ -57,8 +64,9 @@ function visaTabell(tabellId) {
 }
 
 // Fyll tabellerna 
-function skapaTabell(tabellId, writer) {
-    const tabell = document.getElementById(tabellId);
+function skapaTabell(Id, writer) {
+    const table = 'tabell' + Id;
+    const tabell = document.getElementById(table);
 
     const headerRow = document.createElement('tr');
     const header1 = document.createElement('th');
@@ -80,28 +88,17 @@ function skapaTabell(tabellId, writer) {
     bookList.forEach( book => {
         skapaRad(tabell, book)    
     } )
+
+    document.getElementById('btn' + Id).innerHTML = writer;
+    /*const buttonContainer = document.getElementsByClassName('button-container')
+    const btn             = document.createElement('button');
+          btn.id = 'btn' + Id;
+          btn.onclick = '"visaTabell(' + table + ')"';
+          buttonContainer.appendChild(btn);
+*/
     
 }
-/* vad fyller denna för funktion?
-function skapaaRad(tabell, radnummer) {
-    const tr = document.createElement('tr');
 
-    const td1 = document.createElement('td');
-    td1.textContent = `Rad ${radnummer}, Kolumn 1`;
-    tr.appendChild(td1);
-
-    const td2 = document.createElement('td');
-    td2.textContent = `Rad ${radnummer}, Kolumn 2`;
-    td2.setAttribute('class') = 'left'
-    tr.appendChild(td2);
-
-    const td3 = document.createElement('td');
-    td3.textContent = `Rad ${radnummer}, Kolumn 3`;
-    tr.appendChild(td3);
-
-    tabell.appendChild(tr);
-}
-*/
 function sorteraKolumn3(tabellId) {
     const tabell = document.getElementById(tabellId);
     const rows = Array.from(tabell.rows).slice(1); // Hoppa över headern
@@ -155,7 +152,18 @@ function skapaRad(tabell, book) {
     tabell.appendChild(rad);
 }
 
+function getAllAuthors (bookList) {
+    let authors = [];
+    
+    bookList.forEach(item => {
+         if (!authors.includes(item.author)) {
+            authors.push(item.author);
+         }
+        });
 
+    return authors;
+    
+}
 
 
 
