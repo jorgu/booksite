@@ -63,7 +63,7 @@ function skapaTabell(Id, writer) {
     const btn             = document.createElement('button');
     // <button id="btn1" onclick="visaTabell('tabell1')">Visa Tabell 1</button>
           btn.id 		  = 'btn' + Id;
-          btn.innerHTML	  = writer;
+          btn.innerHTML	  = writer + '.';
           btn.onclick 	  = 'visaTabell("tabell1")' //'visaTabell("' + table + '")';
           buttonContainer.appendChild(btn);
         
