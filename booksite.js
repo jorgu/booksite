@@ -16,38 +16,7 @@ writers.forEach(writer => {
     allTables.push('tabell' + id);
 });
 
-/*/' Skapa alla tre tabeller
-let tableID = 'tabell1';
-let writer  = 'Henning Mankell';
 
-skapaTabell(tableID, writer);
-document.getElementById('btn1').innerHTML = writer;
-
-tableID = 'tabell2';
-writer  = 'Åsa Larsson';
-skapaTabell(tableID, writer);
-document.getElementById('btn2').innerHTML = writer;
-
-tableID = 'tabell3';
-writer  = 'Liza Marklund';
-skapaTabell(tableID, writer);
-document.getElementById('btn3').innerHTML = writer;
-
-tableID = 'tabell4';
-writer  = 'Mari Jungstedt';
-skapaTabell(tableID, writer);
-document.getElementById('btn4').innerHTML = writer;
-
-tableID = 'tabell5';
-writer  = 'Åsa Larsson';
-skapaTabell(tableID, writer);
-document.getElementById('btn5').innerHTML = writer;
-
-tableID = 'tabell6';
-writer  = 'Hjorth Rosenfeldt';
-skapaTabell(tableID, writer);
-document.getElementById('btn6').innerHTML = writer;
-*/
 
 // Funktion för att visa en viss tabell och dölja de andra
 function visaTabell(tabellId) {
