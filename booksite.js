@@ -89,13 +89,15 @@ function skapaTabell(Id, writer) {
         skapaRad(tabell, book)    
     } )
 
-    document.getElementById('btn' + Id).innerHTML = writer;
+    
     const buttonContainer = document.getElementById('buttonContainer')
     const btn             = document.createElement('button');
+    // <button id="btn1" onclick="visaTabell('tabell1')">Visa Tabell 1</button>
           btn.id = 'btn' + Id;
-        btn.class = '';
           btn.onclick = '"visaTabell(' + table + ')"';
           buttonContainer.appendChild(btn);
+        
+    document.getElementById('btn' + Id).innerHTML = writer;
 
     
 }
