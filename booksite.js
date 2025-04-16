@@ -34,16 +34,14 @@ function visaTabell(tabellId) {
 
 // Fyll tabellerna 
 function skapaTabell(Id, writer) {
-    const tableId = 'tabell' + Id;
-    const tableContainer = document.getElementById('tableContainer');
-    const newTable = document.createElement('table');
-    newTable.id = tableId;
-        
-    //const tabell = document.getElementById(tableId);
+    const tableId           = 'tabell' + Id;
+    const tableContainer    = document.getElementById('tableContainer');
+    const newTable          = document.createElement('table');
+    newTable.id             = tableId;
 
-    const headerRow = document.createElement('tr');
-    const header1 = document.createElement('th');
-    header1.textContent = writer;
+    const headerRow         = document.createElement('tr');
+    const header1           = document.createElement('th');
+    header1.textContent     = writer;
     headerRow.appendChild(header1);
 
     const header2 = document.createElement('th');
@@ -72,9 +70,6 @@ function skapaTabell(Id, writer) {
           btn.setAttribute('onclick', 'visaTabell("' + newTable.id + '")')
           buttonContainer.appendChild(btn);
         
-    //document.getElementById('btn' + Id).innerHTML = '.' + writer;
-
-    
 }
 
 function sorteraKolumn3(tabellId) {
