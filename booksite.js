@@ -34,8 +34,12 @@ function visaTabell(tabellId) {
 
 // Fyll tabellerna 
 function skapaTabell(Id, writer) {
-    const table = 'tabell' + Id;
-    const tabell = document.getElementById(table);
+    const tableId = 'tabell' + Id;
+    const tableContainer = document.getElementById('tableContainer');
+    const newTable = document.createElement('table');
+    newTable.id = tableId;
+        
+    //const tabell = document.getElementById(tableId);
 
     const headerRow = document.createElement('tr');
     const header1 = document.createElement('th');
@@ -50,21 +54,22 @@ function skapaTabell(Id, writer) {
     header3.textContent = 'Utgivningsår';
     headerRow.appendChild(header3);
 
-    tabell.appendChild(headerRow);
+    newTable.appendChild(headerRow);
+
+    tableContainer.appendChild(newTable);
 
     // Get author's books
     let bookList = books.filter(function (item) {return item.author==writer}) ;
     bookList.forEach( book => {
-        skapaRad(tabell, book)    
+        skapaRad(newTable, book)    
     } )
 
     
     const buttonContainer = document.getElementById('buttonContainer')
-    const btn             = document.createElement('button');
-    // <button id="btn1" onclick="visaTabell('tabell1')">Visa Tabell 1</button>
+    const btn             = document.createElement('button')
           btn.id 		  = 'btn' + Id;
-          btn.innerHTML	  = writer + '..';
-          btn.onclick 	  = function () { visaTabell(tabell1); }; //'visaTabell("' + table + '")';
+          btn.innerHTML	  = writer;
+          btn.setAttribute('onclick', 'visaTabell("' + newTable.id + '")')
           buttonContainer.appendChild(btn);
         
     //document.getElementById('btn' + Id).innerHTML = '.' + writer;
