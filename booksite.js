@@ -72,30 +72,6 @@ function skapaTabell(Id, writer) {
         
 }
 
-function sorteraKolumn3(tabellId) {
-    const tabell = document.getElementById(tabellId);
-    const rows = Array.from(tabell.rows).slice(1); // Hoppa över headern
-
-    // Sortera raderna baserat på textinnehållet i tredje kolumnen
-    const sortedRows = rows.sort((a, b) => {
-        const aText = a.cells[2].textContent.trim();
-        const bText = b.cells[2].textContent.trim();
-        
-        // Om innehållet är siffror, jämför som siffror
-        const aNum = parseFloat(aText);
-        const bNum = parseFloat(bText);
-
-        if (!isNaN(aNum) && !isNaN(bNum)) {
-            return aNum - bNum;
-        } else {
-            return aText.localeCompare(bText, 'sv');
-        }
-    });
-
-    // Lägg tillbaka raderna i tabellen i rätt ordning
-    sortedRows.forEach(row => tabell.appendChild(row));
-}
-
 function skapaCell(text, isAdmin = false) {
     const cell = document.createElement('td');
     cell.textContent = text;
