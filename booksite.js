@@ -90,12 +90,13 @@ function skapaTabell(Id, writer) {
     } )
 
     document.getElementById('btn' + Id).innerHTML = writer;
-    /*const buttonContainer = document.getElementsByClassName('button-container')
+    const buttonContainer = document.getElementById('buttonContainer')
     const btn             = document.createElement('button');
           btn.id = 'btn' + Id;
+        btn.class = '';
           btn.onclick = '"visaTabell(' + table + ')"';
           buttonContainer.appendChild(btn);
-*/
+
     
 }
 
