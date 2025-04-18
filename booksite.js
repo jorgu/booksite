@@ -55,11 +55,22 @@ function skapaTabell(Id, writer) {
     newTable.appendChild(headerRow);
 
     tableContainer.appendChild(newTable);
+    let bookSerie           = '';
+    let color;
+    let defaultColor        = 'darkblue';
+    let notDefaultColor     = 'green';
+    let notNotDefaultColor  = 'orange';
 
     // Get author's books
     let bookList = books.filter(function (item) {return item.author==writer}) ;
+    
+    bookSerie    = bookList[0]["serie"];
+    color        = defaultColor;
+
     bookList.forEach( book => {
-        skapaRad(newTable, book)    
+        bookSerie == book.serie ? color : color = notDefaultColor;
+        skapaRad(color, newTable, book)
+        bookSerie = book.serie;    
     } )
 
     
@@ -96,8 +107,9 @@ function sorteraKolumn3(tabellId) {
     sortedRows.forEach(row => tabell.appendChild(row));
 }
 */
-function skapaCell(text, isAdmin = false) {
+function skapaCell(color, text, isAdmin = false) {
     const cell = document.createElement('td');
+    if (color.length > 0) { cell.style.color = color}
     cell.textContent = text;
 
     if (isAdmin) {
@@ -110,7 +122,7 @@ function skapaCell(text, isAdmin = false) {
     return cell;
 }
 
-function skapaRad(tabell, book) {
+function skapaRad(color, tabell, book) {
     const rad = document.createElement('tr');
     let isBought = false;
     if (isAdmin) {
@@ -118,9 +130,9 @@ function skapaRad(tabell, book) {
     }
 
     // Exempel: Kolumn 1 vanlig, Kolumn 2 grå, Kolumn 3 grå + överstruken
-    rad.appendChild(skapaCell(book.serie));
-    rad.appendChild(skapaCell(book.book, isBought)); // grå
-    rad.appendChild(skapaCell(book.year, isBought)); // grå + överstruken
+    rad.appendChild(skapaCell(color, book.serie));
+    rad.appendChild(skapaCell("", book.book, isBought)); // grå
+    rad.appendChild(skapaCell("", book.year, isBought)); // grå + överstruken
 
     tabell.appendChild(rad);
 }
