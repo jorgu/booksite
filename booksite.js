@@ -58,7 +58,7 @@ function skapaTabell(Id, writer) {
     let bookSerie           = '';
     let color;
     let defaultColor        = 'darkblue';
-    let notDefaultColor     = 'green';
+    let notDefaultColor     = 'darkred';
     let notNotDefaultColor  = 'orange';
 
     // Get author's books
@@ -107,8 +107,8 @@ function skapaRad(color, tabell, book) {
 
     // Exempel: Kolumn 1 vanlig, Kolumn 2 grå, Kolumn 3 grå + överstruken
     rad.appendChild(skapaCell(color, book.serie));
-    rad.appendChild(skapaCell("", book.book, isBought)); // grå
-    rad.appendChild(skapaCell("", book.year, isBought)); // grå + överstruken
+    rad.appendChild(skapaCell(color, book.book, isBought)); // grå
+    rad.appendChild(skapaCell(color, book.year, isBought)); // grå + överstruken
 
     tabell.appendChild(rad);
 }
