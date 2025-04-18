@@ -58,7 +58,7 @@ function skapaTabell(Id, writer) {
     let bookSerie           = '';
     let color;
     let defaultColor        = 'darkblue';
-    let notDefaultColor     = 'darkred';
+    let notDefaultColor     = 'green';
     let notNotDefaultColor  = 'orange';
 
     // Get author's books
