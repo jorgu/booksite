@@ -59,6 +59,4 @@ function init() {
     books.push({author: 'Hjorth Rosenfeldt', serie: 'Sebastian Bergman', book: 'En högre rättvisa', year: 2018, bought: ''});
     books.push({author: 'Hjorth Rosenfeldt', serie: 'Sebastian Bergman', book: 'Som man sår', year: 2021, bought: ''});
     books.push({author: 'Hjorth Rosenfeldt', serie: 'Sebastian Bergman', book: 'Skulden man bär', year: 2023, bought: ''});
-    books.push({author: 'JörgenG', serie: 'cyklarn', book: 'Den stora cykelboken', year: 2023, bought: ''});
-
 }
