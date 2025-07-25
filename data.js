@@ -2,13 +2,13 @@
 
 function init() {
     books.push({author: 'Liza Marklund', serie: 'Annika Bengtzon', book: 'Sprängaren', year: 1998, bought: 'X'});
-	books.push({author: 'Liza Marklund', serie: 'Annika Bengtzon', book: 'Studio sex', year: 1999, bought: ''});
+	books.push({author: 'Liza Marklund', serie: 'Annika Bengtzon', book: 'Studio sex', year: 1999, bought: 'X'});
 	books.push({author: 'Liza Marklund', serie: 'Annika Bengtzon', book: 'Paradiset', year: 2000, bought: 'X'});
 	books.push({author: 'Liza Marklund', serie: 'Annika Bengtzon', book: 'Prime time', year: 2002, bought: 'X'});
 	books.push({author: 'Liza Marklund', serie: 'Annika Bengtzon', book: 'Den röda vargen', year: 2003, bought: 'X'});
 	books.push({author: 'Liza Marklund', serie: 'Annika Bengtzon', book: 'Nobels testamente', year: 2006, bought: 'X'});
 	books.push({author: 'Liza Marklund', serie: 'Annika Bengtzon', book: 'Livstid', year: 2007, bought: 'X'});
-	books.push({author: 'Liza Marklund', serie: 'Annika Bengtzon', book: 'En plats i solen', year: 2008, bought: ''});
+	books.push({author: 'Liza Marklund', serie: 'Annika Bengtzon', book: 'En plats i solen', year: 2008, bought: 'X'});
 	books.push({author: 'Liza Marklund', serie: 'Annika Bengtzon', book: 'Du gamla, du fria', year: 2011, bought: ''});
 	books.push({author: 'Liza Marklund', serie: 'Annika Bengtzon', book: 'Lyckliga gatan', year: 2013, bought: ''});
 	books.push({author: 'Liza Marklund', serie: 'Annika Bengtzon', book: 'Järnblod', year: 2015, bought: ''});
@@ -19,7 +19,7 @@ function init() {
 	books.push({author: 'Mari Jungstedt', serie: 'Anders Knutas', book: 'I denna stilla natt', year: 2004, bought: 'X'});
 	books.push({author: 'Mari Jungstedt', serie: 'Anders Knutas', book: 'Den inre kretsen', year: 2005, bought: 'X'});
 	books.push({author: 'Mari Jungstedt', serie: 'Anders Knutas', book: 'Den döende dandyn', year: 2006, bought: ''});
-	books.push({author: 'Mari Jungstedt', serie: 'Anders Knutas', book: 'I denna ljuva sommartid', year: 2007, bought: ''});
+	books.push({author: 'Mari Jungstedt', serie: 'Anders Knutas', book: 'I denna ljuva sommartid', year: 2007, bought: 'X'});
 	books.push({author: 'Mari Jungstedt', serie: 'Anders Knutas', book: 'Den mörka ängeln', year: 2008, bought: 'X'});
 	books.push({author: 'Mari Jungstedt', serie: 'Anders Knutas', book: 'Den dubbla tystnaden', year: 2009, bought: 'X'});
 	books.push({author: 'Mari Jungstedt', serie: 'Anders Knutas', book: 'Den farliga leken', year: 2010, bought: ''});
@@ -42,14 +42,14 @@ function init() {
 	books.push({author: 'Henning Mankell', serie: 'Kurt Wallander', book: 'Mördare utan ansikte', year: 1991, bought: 'X'});
 	books.push({author: 'Henning Mankell', serie: 'Kurt Wallander', book: 'Hundarna i Riga', year: 1992, bought: 'X'});
 	books.push({author: 'Henning Mankell', serie: 'Kurt Wallander', book: 'Den vita lejoninnan', year: 1993, bought: 'X'});
-	books.push({author: 'Henning Mankell', serie: 'Kurt Wallander', book: 'Mannen som log', year: 1994, bought: ''});
+	books.push({author: 'Henning Mankell', serie: 'Kurt Wallander', book: 'Mannen som log', year: 1994, bought: 'X'});
 	books.push({author: 'Henning Mankell', serie: 'Kurt Wallander', book: 'Villospår', year: 1995, bought: 'X'});
 	books.push({author: 'Henning Mankell', serie: 'Kurt Wallander', book: 'Den femte kvinnan', year: 1996, bought: 'X'});
 	books.push({author: 'Henning Mankell', serie: 'Kurt Wallander', book: 'Steget efter', year: 1997, bought: 'X'});
 	books.push({author: 'Henning Mankell', serie: 'Kurt Wallander', book: 'Brandvägg', year: 1998, bought: 'X'});
-	books.push({author: 'Henning Mankell', serie: 'Kurt Wallander', book: 'Pyramiden', year: 1999, bought: ''});
-	books.push({author: 'Henning Mankell', serie: 'Kurt Wallander', book: 'Innan frosten', year: 2002, bought: ''});
-	books.push({author: 'Henning Mankell', serie: 'Kurt Wallander', book: 'Den orolige mannen', year: 2009, bought: ''});
+	books.push({author: 'Henning Mankell', serie: 'Kurt Wallander', book: 'Pyramiden', year: 1999, bought: 'X'});
+	books.push({author: 'Henning Mankell', serie: 'Kurt Wallander', book: 'Innan frosten', year: 2002, bought: 'X'});
+	books.push({author: 'Henning Mankell', serie: 'Kurt Wallander', book: 'Den orolige mannen', year: 2009, bought: 'X'});
 	books.push({author: 'Henning Mankell', serie: 'Kurt Wallander', book: 'Handen', year: 2013, bought: ''});
 	books.push({author: 'Hjorth Rosenfeldt', serie: 'Sebastian Bergman', book: 'Det fördolda', year: 2010, bought: ''});
 	books.push({author: 'Hjorth Rosenfeldt', serie: 'Sebastian Bergman', book: 'Lärjungen', year: 2011, bought: ''});
