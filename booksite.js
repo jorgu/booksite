@@ -102,7 +102,7 @@ function skapaRad(color, tabell, book) {
     const rad = document.createElement('tr');
     let isBought = false;
     if (isAdmin) {
-        book.bought.toLowerCase() == "x" ? isBought = true : isBought = false;
+        book.bought.toLowerCase() == "true" ? isBought = true : isBought = false;
     }
 
     // Exempel: Kolumn 1 vanlig, Kolumn 2 grå, Kolumn 3 grå + överstruken
