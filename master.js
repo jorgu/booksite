@@ -1,6 +1,6 @@
 'use strict'
 
-include('data.js');
+//include('data.js');
 include('booksite.js');
 
 function include(file) { 
