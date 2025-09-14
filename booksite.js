@@ -107,8 +107,8 @@ function skapaRad(color, tabell, book) {
 
     // Exempel: Kolumn 1 vanlig, Kolumn 2 grå, Kolumn 3 grå + överstruken
     rad.appendChild(skapaCell(color, book.serie));
-    rad.appendChild(skapaCell(color, book.book, isBought)); // grå
-    rad.appendChild(skapaCell(color, book.year, isBought)); // grå + överstruken
+    rad.appendChild(skapaCell(color, book.book, book.bought)); // grå
+    rad.appendChild(skapaCell(color, book.year, book.bought)); // grå + överstruken
 
     tabell.appendChild(rad);
 }
