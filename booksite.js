@@ -59,7 +59,7 @@ function skapaTabell(Id, writer, isAdmin) {
     let color;
     let defaultColor        = 'darkblue';
     let notDefaultColor     = 'green';
-    let notNotDefaultColor  = 'orange';
+    let notNotDefaultColor  = 'darkorange';
 
     // Get author's books
     let bookList = books.filter(function (item) {return item.author==writer}) ;
@@ -68,7 +68,9 @@ function skapaTabell(Id, writer, isAdmin) {
     color        = defaultColor;
 
     bookList.forEach( book => {
-        bookSerie == book.serie ? color : color = notDefaultColor;
+        if(bookSerie != book.serie) {
+            color == notDefaultColor ? color = notNotDefaultColor : color = notDefaultColor;
+        } 
         skapaRad(color, newTable, book, isAdmin)
         bookSerie = book.serie;    
     } )
