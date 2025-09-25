@@ -4,12 +4,19 @@
 https://jorgu.github.io/booksite/;
 
 */
-let isAdmin = window.location.href.toLowerCase().indexOf('theking') > 0 ? true : false; 
-var books   = [];
-let allTables = []
+let isAdmin   = window.location.href.toLowerCase().indexOf('theking') > 0 ? true : false; 
+var books     = [];
+let allTables = [];
+let writers   = []
 
 init();
-let writers = getAllAuthors(books);
+if(isAdmin) {
+    writers = getAllAuthors(books);
+} else {
+    const booklist = books.filter(book => book.bought === 'TRUE');
+    writers = getAllAuthors(booklist);
+}
+
 let id = 0;
 writers.forEach(writer => {
     skapaTabell(++id, writer, isAdmin);
