@@ -253,6 +253,6 @@ function init(isAdmin, toBuy) {
     books.push({author: 'Övriga', serie: 'Katarina Mazetti', book: 'Familjegraven', year: 2008, bought: 'TRUE'})
 
     if(toBuy)           { return books.filter(book => book.bought === 'FALSE'); }
-     else if (!isAdmin) { return books.filter(book => book.bought === 'TRUE'); }
+     //else if (!isAdmin) { return books.filter(book => book.bought === 'TRUE'); }
      else               { return books}
 }
