@@ -19,7 +19,7 @@ writers = getAllAuthors(books);
 
 let id = 0;
 writers.forEach(writer => {
-    skapaTabell(++id, writer, isAdmin);
+    skapaTabell(++id, books, writer, isAdmin);
     allTables.push('tabell' + id);
 });
 

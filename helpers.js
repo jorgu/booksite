@@ -1,7 +1,7 @@
 'use strict'
 
 // Fyll tabellerna 
-export function skapaTabell(Id, writer, isAdmin) {
+export function skapaTabell(Id, books, writer, isAdmin) {
     const tableId           = 'tabell' + Id;
     const tableContainer    = document.getElementById('tableContainer');
     const newTable          = document.createElement('table');
