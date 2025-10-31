@@ -132,7 +132,7 @@ function getAllAuthors (bookList) {
 }
 
 
-export function init(isAdmin, toBuy) {
+function init(isAdmin, toBuy) {
     const books = [];
 
     books.push({author: 'Dan Brown', serie: 'Robert  Langdon', book: 'Änglar och demoner', year: 2000, bought: 'FALSE'})
