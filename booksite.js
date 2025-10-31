@@ -6,7 +6,8 @@ https://jorgu.github.io/booksite/;
 https://chatgpt.com/share/69047782-725c-800b-aec3-b6493bd440e1
 
 */
-//import { init } from './data.js';
+import { init }        from './data.js';
+import { skapaTabell } from './helpers.js';
 
 const isAdmin = window.location.href.toLowerCase().indexOf('theking') > 0 ? true : false; 
 const toBuy   = window.location.href.toLowerCase().indexOf('buy') > 0 ? true : false; 

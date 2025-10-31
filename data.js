@@ -1,6 +1,6 @@
 'use strict'
 
-function init(isAdmin, toBuy) {
+export function init(isAdmin, toBuy) {
     const books = [];
 
     books.push({author: 'Dan Brown', serie: 'Robert  Langdon', book: 'Änglar och demoner', year: 2000, bought: 'FALSE'})
@@ -129,3 +129,4 @@ function init(isAdmin, toBuy) {
      //else if (!isAdmin) { return books.filter(book => book.bought === 'TRUE'); }
      else               { return books}
 }
+
