@@ -119,9 +119,9 @@ export function init(isAdmin, toBuy) {
     books.push({author: 'Viveca Sten', serie: 'Sandhamn', book: 'Iskalla ögonblick', year: 2017, bought: 'FALSE'})
     books.push({author: 'Viveca Sten', serie: 'Sandhamn', book: 'I fel sällskap', year: 2018, bought: 'FALSE'})
     books.push({author: 'Viveca Sten', serie: 'Sandhamn', book: 'I hemlighet begravd', year: 2019, bought: 'FALSE'})
-    books.push({author: 'Övriga', serie: 'Jonas Jonasson', book: 'Hundraåringen som klev ut ...', year: 2021, bought: 'TRUE'})
-    books.push({author: 'Övriga', serie: 'Katarina Mazetti', book: 'Grabben i graven bredvid', year: 2002, bought: 'TRUE'})
-    books.push({author: 'Övriga', serie: 'Katarina Mazetti', book: 'Familjegraven', year: 2008, bought: 'TRUE'})
+    books.push({author: 'Övrig', serie: 'Jonas Jonasson', book: 'Hundraåringen som klev ut ...', year: 2021, bought: 'TRUE'})
+    books.push({author: 'Övrig', serie: 'Katarina Mazetti', book: 'Grabben i graven bredvid', year: 2002, bought: 'TRUE'})
+    books.push({author: 'Övrig', serie: 'Katarina Mazetti', book: 'Familjegraven', year: 2008, bought: 'TRUE'})
 
     if(toBuy)           { return books.filter(book => book.bought === 'FALSE'); }
      //else if (!isAdmin) { return books.filter(book => book.bought === 'TRUE'); }
