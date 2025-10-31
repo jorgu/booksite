@@ -1,3 +1,5 @@
+'use strict'
+
 function init(isAdmin, toBuy) {
     const books = [];
 
