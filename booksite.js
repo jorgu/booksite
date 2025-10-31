@@ -6,7 +6,7 @@ https://jorgu.github.io/booksite/;
 https://chatgpt.com/share/69047782-725c-800b-aec3-b6493bd440e1
 
 */
-import { init } from './data.js';
+//import { init } from './data.js';
 
 const isAdmin = window.location.href.toLowerCase().indexOf('theking') > 0 ? true : false; 
 const toBuy   = window.location.href.toLowerCase().indexOf('buy') > 0 ? true : false; 
@@ -25,7 +25,7 @@ writers.forEach(writer => {
 
 
 // Funktion för att visa en viss tabell och dölja de andra
-export function visaTabell(tabellId) {
+function visaTabell(tabellId) {
     //const tabeller = ['tabell1', 'tabell2', 'tabell3', 'tabell4', 'tabell5', 'tabell6'];
 
     allTables.forEach(id => {
@@ -39,7 +39,7 @@ export function visaTabell(tabellId) {
 }
 
 // Fyll tabellerna 
-export function skapaTabell(Id, writer, isAdmin) {
+function skapaTabell(Id, writer, isAdmin) {
     const tableId           = 'tabell' + Id;
     const tableContainer    = document.getElementById('tableContainer');
     const newTable          = document.createElement('table');
