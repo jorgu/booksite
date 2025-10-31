@@ -1,6 +1,6 @@
 'use strict'
 
-//include('data.js');
+/*include('data.js');
 include('booksite.js');
 
 function include(file) { 
@@ -14,4 +14,4 @@ function include(file) {
     document.getElementsByTagName('html').item(0).appendChild(script); 
     
 }
-  
+  */
