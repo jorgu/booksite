@@ -5,7 +5,7 @@ import { visaTabell } from './booksite.js';
 export function skapaTabell(tableId, books, writer, isAdmin) {
     const tableContainer    = document.getElementById('tableContainer');
     const newTable          = document.createElement('table');
-    newTable.id             = tableId;
+    newTable.id             = 'tabell' + tableId;
 
     const headerRow         = document.createElement('tr');
     const header1           = document.createElement('th');

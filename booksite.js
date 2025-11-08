@@ -23,7 +23,7 @@ export function startApp () {
     let id = 0;
     writers.forEach(writer => {
         skapaTabell(++id, books, writer, isAdmin);
-        allTables.push(id); //('tabell' + id);
+        allTables.push('tabell' + id);
     });
 
 }
