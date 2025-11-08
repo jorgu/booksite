@@ -1,8 +1,8 @@
 'use strict'
-//import { visaTabell } from './booksite.js';
+import { visaTabell } from './booksite.js';
 
 // Fyll tabellerna 
-export function skapaTabell(Id, books, writer, isAdmin) {
+export function skapaTabell(tableId, books, writer, isAdmin) {
     const tableId           = 'tabell' + Id;
     const tableContainer    = document.getElementById('tableContainer');
     const newTable          = document.createElement('table');
@@ -47,9 +47,12 @@ export function skapaTabell(Id, books, writer, isAdmin) {
     
     const buttonContainer = document.getElementById('buttonContainer')
     const btn             = document.createElement('button')
-          btn.id 		  = 'btn' + Id;
+          btn.id 		  = 'btn' + tableId;
           btn.innerHTML	  = writer;
-          btn.setAttribute('onclick', 'visaTabell("' + newTable.id + '")')
+          //btn.setAttribute('onclick', 'visaTabell("' + newTable.id + '")')
+          btn.addEventListener ('click', () => {
+            visaTabell(newTable.id)
+          });
           buttonContainer.appendChild(btn);
         
 }

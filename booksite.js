@@ -7,21 +7,26 @@ https://chatgpt.com/share/69047782-725c-800b-aec3-b6493bd440e1
 
 */
 
+import { init as getBooks } from './init.js'; 
+import { skapaTabell } from './helpers.js';
+
 const isAdmin = window.location.href.toLowerCase().indexOf('theking') > 0 ? true : false; 
 const toBuy   = window.location.href.toLowerCase().indexOf('buy') > 0 ? true : false; 
 let allTables = [];
-let writers   = [];
 
-const books = init(isAdmin, toBuy);
-writers = getAllAuthors(books);
+export function startApp () {
+    let writers   = [];
 
-let id = 0;
-writers.forEach(writer => {
-    skapaTabell(++id, books, writer, isAdmin);
-    allTables.push('tabell' + id);
-});
+    const books = init(isAdmin, toBuy);
+    writers = getAllAuthors(books);
 
+    let id = 0;
+    writers.forEach(writer => {
+        skapaTabell(++id, books, writer, isAdmin);
+        allTables.push('tabell' + id);
+    });
 
+}
 
 // Funktion för att visa en viss tabell och dölja de andra
 export function visaTabell(tabellId) {
