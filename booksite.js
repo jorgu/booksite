@@ -17,7 +17,7 @@ let allTables = [];
 export function startApp () {
     let writers   = [];
 
-    const books = init(isAdmin, toBuy);
+    const books = getBooks(isAdmin, toBuy);
     writers = getAllAuthors(books);
 
     let id = 0;
