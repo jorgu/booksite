@@ -3,7 +3,6 @@ import { visaTabell } from './booksite.js';
 
 // Fyll tabellerna 
 export function skapaTabell(tableId, books, writer, isAdmin) {
-    const tableId           = 'tabell' + Id;
     const tableContainer    = document.getElementById('tableContainer');
     const newTable          = document.createElement('table');
     newTable.id             = tableId;
