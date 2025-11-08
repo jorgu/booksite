@@ -1,5 +1,5 @@
 'use strict'
-import { visaTabell } from './booksite.js'
+//import { visaTabell } from './booksite.js';
 
 // Fyll tabellerna 
 export function skapaTabell(Id, books, writer, isAdmin) {
