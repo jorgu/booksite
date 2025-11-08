@@ -26,7 +26,7 @@ writers.forEach(writer => {
 
 
 // Funktion för att visa en viss tabell och dölja de andra
-function visaTabell(tabellId) {
+export function visaTabell(tabellId) {
     //const tabeller = ['tabell1', 'tabell2', 'tabell3', 'tabell4', 'tabell5', 'tabell6'];
 
     allTables.forEach(id => {
