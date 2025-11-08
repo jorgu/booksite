@@ -7,7 +7,7 @@ https://chatgpt.com/share/69047782-725c-800b-aec3-b6493bd440e1
 
 */
 
-import { init as getBooks } from './init.js'; 
+import { init as getBooks } from './data.js'; 
 import { skapaTabell } from './helpers.js';
 
 const isAdmin = window.location.href.toLowerCase().indexOf('theking') > 0 ? true : false; 
