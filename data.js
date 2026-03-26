@@ -123,7 +123,6 @@ books.push({author: 'Viveca Sten', serie: 'Sandhamn', book: 'Iskalla ögonblick'
 books.push({author: 'Viveca Sten', serie: 'Sandhamn', book: 'I fel sällskap', year: 2018, bought: 'FALSE'})
 books.push({author: 'Viveca Sten', serie: 'Sandhamn', book: 'I hemlighet begravd', year: 2019, bought: 'FALSE'})
 books.push({author: 'Övriga', serie: 'Bonnie Garmus', book: 'Lektioner i kemi', year: 0, bought: 'FALSE'})
-books.push({author: 'Övriga', serie: 'Dan Brown', book: 'Da Vinci koden serie', year: 0, bought: 'FALSE'})
 books.push({author: 'Övriga', serie: 'Fredrik Backman', book: 'Björnstadserien', year: 0, bought: 'FALSE'})
 books.push({author: 'Övriga', serie: 'Freida Mcfadden', book: 'Hembiträdet', year: 0, bought: 'FALSE'})
 books.push({author: 'Övriga', serie: 'Jonas Jonasson', book: 'Hundraåringen som klev ut ...', year: 2021, bought: 'TRUE'})
