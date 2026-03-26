@@ -89,6 +89,7 @@ export function getBooks(isAdmin, toBuy) {
     books.push({author: 'Liza Marklund', serie: 'Stenträsk-triologin', book: 'Polcirkeln', year: 2021, bought: 'FALSE'})
     books.push({author: 'Liza Marklund', serie: 'Stenträsk-triologin', book: 'Kallmyren', year: 2022, bought: 'FALSE'})
     books.push({author: 'Liza Marklund', serie: 'Stenträsk-triologin', book: 'Stormberget', year: 2023, bought: 'FALSE'})
+    books.push({author: 'Jo Nesbø', serie: ' ', book: 'Huvudjägarna', year: 2016, bought: 'FALSE'})
     books.push({author: 'Jo Nesbø', serie: 'Harry Hole', book: 'Fladdermusmannen', year: 2000, bought: 'FALSE'})
     books.push({author: 'Jo Nesbø', serie: 'Harry Hole', book: 'Rödhake', year: 2002, bought: 'FALSE'})
     books.push({author: 'Jo Nesbø', serie: 'Harry Hole', book: 'Nemesis', year: 2004, bought: 'FALSE'})
