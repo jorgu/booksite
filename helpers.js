@@ -73,11 +73,13 @@ function skapaCell(color, text, bought, isAdmin = false) {
 
 function skapaRad(color, tabell, book, isAdmin) {
     const rad = document.createElement('tr');
+    let year  
+    if (book.year==0) {year =''} else {year = book.year}
     
     // Exempel: Kolumn 1 vanlig, Kolumn 2 grå, Kolumn 3 grå + överstruken
     rad.appendChild(skapaCell(color, book.serie));
     rad.appendChild(skapaCell(color, book.book, book.bought, isAdmin)); // grå
-    rad.appendChild(skapaCell(color, book.year, book.bought, isAdmin)); // grå + överstruken
+    rad.appendChild(skapaCell(color, year, book.bought, isAdmin)); // grå + överstruken
 
     tabell.appendChild(rad);
 }
