@@ -74,7 +74,7 @@ function skapaCell(color, text, bought, isAdmin = false) {
 function skapaRad(color, tabell, book, isAdmin) {
     const rad = document.createElement('tr');
     let year  
-    if (book.year==0) {year =''} else {year = book.year}
+    if (book.year==0) {year =' '} else {year = book.year}
     
     // Exempel: Kolumn 1 vanlig, Kolumn 2 grå, Kolumn 3 grå + överstruken
     rad.appendChild(skapaCell(color, book.serie));
