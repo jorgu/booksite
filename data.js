@@ -3,7 +3,7 @@
 export function getBooks(isAdmin, toBuy) {
     const books = [];
 
-    books.push({author: 'Dan Brown', serie: 'Robert  Langdon', book: 'Änglar och demoner', year: 2000, bought: 'FALSE'})
+   books.push({author: 'Dan Brown', serie: 'Robert  Langdon', book: 'Änglar och demoner', year: 2000, bought: 'FALSE'})
 books.push({author: 'Dan Brown', serie: 'Robert  Langdon', book: 'Da vinci koden', year: 2003, bought: 'FALSE'})
 books.push({author: 'Dan Brown', serie: 'Robert  Langdon', book: 'Den förlorade symbolen', year: 2009, bought: 'FALSE'})
 books.push({author: 'Dan Brown', serie: 'Robert  Langdon', book: 'Inferno ', year: 2013, bought: 'FALSE'})
@@ -125,11 +125,15 @@ books.push({author: 'Viveca Sten', serie: 'Sandhamn', book: 'I hemlighet begravd
 books.push({author: 'Övriga', serie: 'Bonnie Garmus', book: 'Lektioner i kemi', year: 0, bought: 'FALSE'})
 books.push({author: 'Övriga', serie: 'Fredrik Backman', book: 'Björnstadserien', year: 0, bought: 'FALSE'})
 books.push({author: 'Övriga', serie: 'Freida Mcfadden', book: 'Hembiträdet', year: 0, bought: 'FALSE'})
+books.push({author: 'Övriga', serie: 'Jan Gradvall (Storytel)', book: 'Vemod undercover: Boken om ABBA', year: 2024, bought: 'FALSE'})
 books.push({author: 'Övriga', serie: 'Jonas Jonasson', book: 'Hundraåringen som klev ut ...', year: 2021, bought: 'TRUE'})
 books.push({author: 'Övriga', serie: 'Katarina Mazetti', book: 'Grabben i graven bredvid', year: 2002, bought: 'TRUE'})
 books.push({author: 'Övriga', serie: 'Katarina Mazetti', book: 'Familjegraven', year: 2008, bought: 'TRUE'})
 books.push({author: 'Övriga', serie: 'Niklas Natt och Dag', book: '1793', year: 0, bought: 'FALSE'})
 books.push({author: 'Övriga', serie: 'Niklas Natt och Dag', book: '1794', year: 0, bought: 'FALSE'})
+books.push({author: 'Övriga', serie: 'srplay', book: 'Rock och minnen med Magnus Broni', year: 2023, bought: 'FALSE'})
+books.push({author: 'Övriga', serie: 'srplay', book: '50 år, 50 låtar med Magnus Broni', year: 2024, bought: 'FALSE'})
+books.push({author: 'Övriga', serie: 'Stephen King', book: 'Den gröna milen', year: 0, bought: 'FALSE'})
 books.push({author: 'Övriga', serie: 'Terry Hayes', book: 'Jag är Pilgrimen', year: 0, bought: 'FALSE'})
 books.push({author: 'Övriga', serie: 'Yuval Noah Harari', book: 'Sapiens: en kort historik över mänskligheten', year: 0, bought: 'FALSE'})
 
