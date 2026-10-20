@@ -137,7 +137,7 @@ books.push({author: 'Övriga', serie: 'srplay', book: 'Line of duty', year: 0, b
 books.push({author: 'Övriga', serie: 'srplay', book: 'The capture', year: 0, bought: 'FALSE'})
 books.push({author: 'Övriga', serie: 'Stephen King', book: 'Den gröna milen', year: 0, bought: 'FALSE'})
 books.push({author: 'Övriga', serie: 'Terry Hayes', book: 'Jag är Pilgrimen', year: 0, bought: 'FALSE'})
-books.push({author: 'Övriga', serie: 'Viaplay', book: 'Offside', year: 0, bought: 'FALSE'})
+books.push({author: 'Övriga', serie: 'Titta', book: 'Offside', year: 0, bought: 'FALSE'})
 books.push({author: 'Övriga', serie: 'Yuval Noah Harari', book: 'Sapiens: en kort historik över mänskligheten', year: 0, bought: 'FALSE'})
 
     if(toBuy)           { return books.filter(book => book.bought === 'FALSE'); }
