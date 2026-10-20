@@ -133,8 +133,11 @@ books.push({author: 'Övriga', serie: 'Niklas Natt och Dag', book: '1793', year:
 books.push({author: 'Övriga', serie: 'Niklas Natt och Dag', book: '1794', year: 0, bought: 'FALSE'})
 books.push({author: 'Övriga', serie: 'srplay', book: 'Rock och minnen med Magnus Broni', year: 2023, bought: 'FALSE'})
 books.push({author: 'Övriga', serie: 'srplay', book: '50 år, 50 låtar med Magnus Broni', year: 2024, bought: 'FALSE'})
+books.push({author: 'Övriga', serie: 'srplay', book: 'Line of duty', year: 0, bought: 'FALSE'})
+books.push({author: 'Övriga', serie: 'srplay', book: 'The capture', year: 0, bought: 'FALSE'})
 books.push({author: 'Övriga', serie: 'Stephen King', book: 'Den gröna milen', year: 0, bought: 'FALSE'})
 books.push({author: 'Övriga', serie: 'Terry Hayes', book: 'Jag är Pilgrimen', year: 0, bought: 'FALSE'})
+books.push({author: 'Övriga', serie: 'Viaplay', book: 'Offside', year: 0, bought: 'FALSE'})
 books.push({author: 'Övriga', serie: 'Yuval Noah Harari', book: 'Sapiens: en kort historik över mänskligheten', year: 0, bought: 'FALSE'})
 
     if(toBuy)           { return books.filter(book => book.bought === 'FALSE'); }
