@@ -48,6 +48,7 @@ export function skapaTabell(tableId, books, writer, isAdmin) {
     const btn             = document.createElement('button')
           btn.id 		  = 'btn' + tableId;
           btn.innerHTML	  = writer;
+          //<<<jg writer EQ 'Lyssna || writer EG 'Titta' ? btn.className = 'notBook' : btn.className = 'default';
           //btn.setAttribute('onclick', 'visaTabell("' + newTable.id + '")')
           btn.addEventListener ('click', () => {
             visaTabell(newTable.id)
