@@ -48,13 +48,21 @@ export function skapaTabell(tableId, books, writer, isAdmin) {
     const btn             = document.createElement('button')
           btn.id 		  = 'btn' + tableId;
           btn.innerHTML	  = writer;
-          //<<<jg writer EQ 'Lyssna || writer EG 'Titta' ? btn.className = 'notBook' : btn.className = 'default';
-          //btn.setAttribute('onclick', 'visaTabell("' + newTable.id + '")')
-          btn.addEventListener ('click', () => {
-            visaTabell(newTable.id)
-          });
-          buttonContainer.appendChild(btn);
-        
+          //kategori Lyssna och Titta skall endast visas om theking = true
+          if (writer == 'Lyssna' || writer == 'Titta')  { 
+            if (isAdmin) {
+                btn.className = 'notBook';
+                btn.addEventListener ('click', () => {
+                    visaTabell(newTable.id)
+                });
+                buttonContainer.appendChild(btn);
+            }
+        } else {
+            btn.addEventListener ('click', () => {
+                visaTabell(newTable.id)
+            });
+            buttonContainer.appendChild(btn);
+        };
 }
 
 function skapaCell(color, text, bought, isAdmin = false) {
