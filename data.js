@@ -44,9 +44,6 @@ books.push({author: 'Åsa Larsson', serie: 'Rebecka Martinsson', book: 'Svart st
 books.push({author: 'Åsa Larsson', serie: 'Rebecka Martinsson', book: 'Till dess din vrede upphör', year: 2008, bought: 'FALSE'})
 books.push({author: 'Åsa Larsson', serie: 'Rebecka Martinsson', book: 'Till offer åt Molok', year: 2012, bought: 'FALSE'})
 books.push({author: 'Åsa Larsson', serie: 'Rebecka Martinsson', book: 'Fädernas missgärningar', year: 2021, bought: 'FALSE'})
-books.push({author: 'Lyssna', serie: 'Jan Gradvall (Storytel)', book: 'Vemod undercover: Boken om ABBA', year: 2024, bought: 'FALSE'})
-books.push({author: 'Lyssna', serie: 'srplay', book: 'Rock och minnen med Magnus Broni', year: 2023, bought: 'FALSE'})
-books.push({author: 'Lyssna', serie: 'srplay', book: '50 år, 50 låtar med Magnus Broni', year: 2024, bought: 'FALSE'})
 books.push({author: 'Camilla Läckberg', serie: 'Fjällbacka', book: 'Isprinsessan', year: 2003, bought: 'FALSE'})
 books.push({author: 'Camilla Läckberg', serie: 'Fjällbacka', book: 'Predikanten', year: 2004, bought: 'FALSE'})
 books.push({author: 'Camilla Läckberg', serie: 'Fjällbacka', book: 'Stenhuggaren', year: 2005, bought: 'FALSE'})
@@ -125,9 +122,6 @@ books.push({author: 'Viveca Sten', serie: 'Sandhamn', book: 'I sanningens namn',
 books.push({author: 'Viveca Sten', serie: 'Sandhamn', book: 'Iskalla ögonblick', year: 2017, bought: 'FALSE'})
 books.push({author: 'Viveca Sten', serie: 'Sandhamn', book: 'I fel sällskap', year: 2018, bought: 'FALSE'})
 books.push({author: 'Viveca Sten', serie: 'Sandhamn', book: 'I hemlighet begravd', year: 2019, bought: 'FALSE'})
-books.push({author: 'Titta', serie: 'srplay', book: 'Line of duty', year: 0, bought: 'FALSE'})
-books.push({author: 'Titta', serie: 'srplay', book: 'The capture', year: 0, bought: 'FALSE'})
-books.push({author: 'Titta', serie: 'Viaplay', book: 'Offside', year: 0, bought: 'FALSE'})
 books.push({author: 'Övriga', serie: 'Bonnie Garmus', book: 'Lektioner i kemi', year: 0, bought: 'FALSE'})
 books.push({author: 'Övriga', serie: 'Fredrik Backman', book: 'Björnstadserien', year: 0, bought: 'FALSE'})
 books.push({author: 'Övriga', serie: 'Freida Mcfadden', book: 'Hembiträdet', year: 0, bought: 'FALSE'})
@@ -139,6 +133,22 @@ books.push({author: 'Övriga', serie: 'Niklas Natt och Dag', book: '1794', year:
 books.push({author: 'Övriga', serie: 'Stephen King', book: 'Den gröna milen', year: 0, bought: 'FALSE'})
 books.push({author: 'Övriga', serie: 'Terry Hayes', book: 'Jag är Pilgrimen', year: 0, bought: 'FALSE'})
 books.push({author: 'Övriga', serie: 'Yuval Noah Harari', book: 'Sapiens: en kort historik över mänskligheten', year: 0, bought: 'FALSE'})
+
+//          Lyssna
+
+books.push({author: 'Lyssna', serie: 'Jan Gradvall (Storytel)', book: 'Vemod undercover: Boken om ABBA', year: 2024, bought: 'FALSE'})
+books.push({author: 'Lyssna', serie: 'srplay', book: 'Rock och minnen med Magnus Broni', year: 2023, bought: 'FALSE'})
+books.push({author: 'Lyssna', serie: 'srplay', book: '50 år, 50 låtar med Magnus Broni', year: 2024, bought: 'FALSE'})
+
+//          Titta
+
+books.push({author: 'Titta', serie: 'srplay', book: 'Line of duty - Säsong 1-6', year: 0, bought: 'FALSE'})
+books.push({author: 'Titta', serie: 'srplay', book: 'The capture', year: 0, bought: 'FALSE'})
+books.push({author: 'Titta', serie: 'Viaplay', book: 'Offside', year: 0, bought: 'FALSE'})
+books.push({author: 'Titta', serie: 'srplay', book: 'Virgil: Säsong 1 - Död man ombord', year: 2021, bought: 'FALSE'})
+books.push({author: 'Titta', serie: 'srplay', book: 'Virgil: Säsong 2 - Hotet från ovan', year: 2021, bought: 'FALSE'})
+books.push({author: 'Titta', serie: 'srplay', book: 'The Capture: Säsong 1-3', year: 2019, bought: 'FALSE'})
+
 
     if(toBuy)           { return books.filter(book => book.bought === 'FALSE'); }
      //else if (!isAdmin) { return books.filter(book => book.bought === 'TRUE'); }
