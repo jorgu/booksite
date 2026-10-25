@@ -13,7 +13,9 @@ export function skapaTabell(tableId, books, writer, isAdmin) {
     headerRow.appendChild(header1);
 
     const header2 = document.createElement('th');
-    header2.textContent = 'Bok';
+    let bookHeader;
+    (writer == 'Lyssna' || writer == 'Titta') ? bookHeader = '' : bookHeader = 'Bok';
+    header2.textContent = bookHeader;
     headerRow.appendChild(header2);
 
     const header3 = document.createElement('th');
