@@ -121,7 +121,7 @@ export function getBooks(isAdmin, toBuy) {
     books.push({author: 'Viveca Sten', serie: 'Sandhamn', book: 'I sanningens namn', year: 2015, bought: 'FALSE'})
     books.push({author: 'Viveca Sten', serie: 'Sandhamn', book: 'Iskalla ögonblick', year: 2017, bought: 'FALSE'})
     books.push({author: 'Viveca Sten', serie: 'Sandhamn', book: 'I fel sällskap', year: 2018, bought: 'FALSE'})
-    books.push({author: 'Viveca Sten', serie: 'Sandhamn', book: 'I hemlighet begravd', year: 1919, bought: 'FALSE'})
+    books.push({author: 'Viveca Sten', serie: 'Sandhamn', book: 'I hemlighet begravd', year: 2019, bought: 'FALSE'})
     books.push({author: 'Övriga', serie: 'Bonnie Garmus', book: 'Lektioner i kemi', year: 0, bought: 'FALSE'})
     books.push({author: 'Övriga', serie: 'Fredrik Backman', book: 'Björnstadserien', year: 0, bought: 'FALSE'})
     books.push({author: 'Övriga', serie: 'Freida Mcfadden', book: 'Hembiträdet', year: 0, bought: 'FALSE'})
@@ -133,15 +133,11 @@ export function getBooks(isAdmin, toBuy) {
     books.push({author: 'Övriga', serie: 'Stephen King', book: 'Den gröna milen', year: 0, bought: 'FALSE'})
     books.push({author: 'Övriga', serie: 'Terry Hayes', book: 'Jag är Pilgrimen', year: 0, bought: 'FALSE'})
     books.push({author: 'Övriga', serie: 'Yuval Noah Harari', book: 'Sapiens: en kort historik över mänskligheten', year: 0, bought: 'FALSE'})
-
-    books.sort(function(a, b){
-        let x = a.author.toLowerCase();
-        let y = b.author.toLowerCase();
-        if (x < y) {return -1;}
-        if (x > y) {return 1;}
-        return 0;
-    });
-
+    
+    books.sort((a, b) =>
+    a.author.localeCompare(b.author, "sv") ||
+    a.year - b.year
+    );
 
     //          Lyssna
 
