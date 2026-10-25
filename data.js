@@ -135,8 +135,8 @@ export function getBooks(isAdmin, toBuy) {
     books.push({author: 'Övriga', serie: 'Yuval Noah Harari', book: 'Sapiens: en kort historik över mänskligheten', year: 0, bought: 'FALSE'})
     
     books.sort((a, b) =>
-    a.author.localeCompare(b.author, "sv") ||
-    a.year - b.year
+        a.author.localeCompare(b.author, "sv") ||
+        a.year - b.year
     );
 
     //          Lyssna
