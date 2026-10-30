@@ -148,7 +148,6 @@ export function getBooks(isAdmin, toBuy) {
     //          Titta
 
     books.push({author: 'Titta', serie: 'srplay', book: 'Line of duty - Säsong 1-6', year: 0, bought: 'FALSE'})
-    books.push({author: 'Titta', serie: 'srplay', book: 'The capture', year: 0, bought: 'FALSE'})
     books.push({author: 'Titta', serie: 'Viaplay', book: 'Offside', year: 0, bought: 'FALSE'})
     books.push({author: 'Titta', serie: 'srplay', book: 'Virgil: Säsong 1 - Död man ombord', year: 2021, bought: 'FALSE'})
     books.push({author: 'Titta', serie: 'srplay', book: 'Virgil: Säsong 2 - Hotet från ovan', year: 2021, bought: 'FALSE'})
